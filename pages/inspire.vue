@@ -70,6 +70,7 @@
             sm="6"
             md="4"
             lg="3"
+            xl="2"
           >
             <v-card>
               <v-card-title class="subheading font-weight-bold">{{ item.name }}</v-card-title>
@@ -82,7 +83,8 @@
                   :key="index"
                 >
                   <v-list-item-content :class="{ 'blue--text': sortBy === key }">{{ key }}:</v-list-item-content>
-                  <v-list-item-content class="align-end" :class="{ 'blue--text': sortBy === key }">{{ item[key.toLowerCase()] }}</v-list-item-content>
+                  <v-list-item-content v-if="key.toUpperCase()=='URL'" class="align-end" :class="{ 'blue--text': sortBy === key }"><v-btn icon :href="item[key.toLowerCase()]" target="_blank"><v-icon>mdi-launch</v-icon></v-btn></v-list-item-content>
+                  <v-list-item-content v-else class="align-end" :class="{ 'blue--text': sortBy === key }">{{ item[key.toLowerCase()] }}</v-list-item-content>
                 </v-list-item>
               </v-list>
             </v-card>
@@ -153,7 +155,7 @@
   export default {
     data(){
       return {
-        itemsPerPageArray: [4, 8, 12],
+        itemsPerPageArray: [3, 6, 9, 12],
         search: '',
         filter: {},
         sortDesc: false,
@@ -164,7 +166,7 @@
           'Address',
           'URL'
         ],        
-      itemsPerPage: 4,
+      itemsPerPage: 12,
       cities: [],
     }
     },

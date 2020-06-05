@@ -83,7 +83,7 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>&copy; {{ new Date().getFullYear() }} P3RK Studios</span>
     </v-footer>
   </v-app>
 </template>
@@ -103,14 +103,14 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: 'Directory',
           to: '/inspire'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'ISKCON'
     }
   }
 }

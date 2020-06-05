@@ -1,15 +1,15 @@
 <template>
   <img
     class="VuetifyLogo"
-    alt="Vuetify Logo"
-    src="/vuetify-logo.svg"
+    alt="ISKCON"
+    src="/iskcon.png"
   >
 </template>
 
 <style>
 .VuetifyLogo {
   height:180px;
-  width: 180px;
+  width: 450px;
   transform: rotateY(560deg);
   animation: turn 3.5s ease-out forwards 1s;
 }
