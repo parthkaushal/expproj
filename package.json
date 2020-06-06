@@ -1,7 +1,7 @@
 {
-  "name": "expproj",
+  "name": "ISKCON",
   "version": "1.0.0",
-  "description": "My world-class Nuxt.js project",
+  "description": "ISKCON Directory",
   "author": "P3RK STUDIOS",
   "private": true,
   "scripts": {

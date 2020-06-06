@@ -155,7 +155,7 @@
   export default {
     data(){
       return {
-        itemsPerPageArray: [3, 6, 9, 12],
+        itemsPerPageArray: [4, 8, 12, 16, 18],
         search: '',
         filter: {},
         sortDesc: false,
@@ -166,7 +166,6 @@
           'Address',
           'URL'
         ],        
-      itemsPerPage: 12,
       cities: [],
     }
     },
@@ -177,6 +176,15 @@
     filteredKeys () {
       return this.keys.filter(key => key !== `Name`)
     },
+    itemsPerPage () {
+        switch (this.$vuetify.breakpoint.name) {
+          case 'xs': return 4
+          case 'sm': return 8
+          case 'md': return 12
+          case 'lg': return 16
+          case 'xl': return 18
+        }
+    }
   },    
   methods: {
     nextPage () {

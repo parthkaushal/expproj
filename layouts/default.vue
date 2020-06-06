@@ -102,10 +102,52 @@ export default {
           to: '/'
         },
         {
+          icon: 'mdi-home',
+          title: 'Home',
+          to: '/parallax'
+        },
+        {
           icon: 'mdi-chart-bubble',
           title: 'Directory',
           to: '/inspire'
-        }
+        },
+        {
+          icon: 'mdi-comment-quote',
+          title: 'Quotes',
+          to: '/quotes'
+        },
+        {
+          icon: 'mdi-image',
+          title: 'Darshan',
+          to: '/pictures'
+        },
+        
+        {
+          icon: 'mdi-music',
+          title: 'Kirtan',
+          to: '/kirtan'
+        },
+        {
+          icon: 'mdi-account',
+          title: 'Devotees',
+          to: '/devotees'
+        },
+        {
+          icon: 'mdi-timeline-clock-outline',
+          title: 'Timeline',
+          to: '/timeline'
+        },
+        {
+          icon: 'mdi-chart-bell-curve-cumulative',
+          title: 'Usage',
+          to: '/usage'
+        },
+        {
+          icon: 'mdi-star-face',
+          title: 'Rate',
+          to: '/ratings'
+        },
+        
       ],
       miniVariant: false,
       right: true,

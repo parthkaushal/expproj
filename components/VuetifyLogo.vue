@@ -8,8 +8,8 @@
 
 <style>
 .VuetifyLogo {
-  height:180px;
-  width: 450px;
+  height:250px;
+  width: 250px;
   transform: rotateY(560deg);
   animation: turn 3.5s ease-out forwards 1s;
 }
